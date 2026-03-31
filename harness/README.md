@@ -8,7 +8,7 @@ Thin glue layer between Loam's stable sources of truth and the current agent har
 - **The context stack** — substrate → spec → plan → issue → code, resolved to `/tmp/loam-context-{issue-id}.md`
 - **The backpressure gates** — `make verify` (`cargo fmt`, `clippy`, `check`, `test`)
 - **The PR** — a git branch on `loam-runbook` is the output contract
-- **Identity** — `SOUL.md`, `AGENTS.md`, `IDENTITY.md` express Loam's values, not the harness config
+- **Identity** — `soul/` expresses Loam's values, not the harness config
 
 ## What the harness owns (lives here)
 
