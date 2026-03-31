@@ -1,0 +1,18 @@
+[project]
+path = "/home/loam/repos/loam-runbook"
+
+[sandbox]
+network = "restricted"
+allowed_hosts = [
+  "crates.io",
+  "static.crates.io",
+  "index.crates.io",
+  "api.github.com",
+  "github.com",
+]
+
+[env]
+ANTHROPIC_API_KEY = "$ANTHROPIC_API_KEY"
+
+[gates]
+pre_pr = "make verify"
